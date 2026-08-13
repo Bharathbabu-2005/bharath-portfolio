@@ -182,7 +182,7 @@ function Journey() {
 
 function JourneyContent({
   item,
-  Icon,
+
   align,
 }: {
   item: (typeof journey)[number];
