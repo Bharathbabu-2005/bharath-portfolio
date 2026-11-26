@@ -47,7 +47,7 @@ function Navbar() {
           href="#home"
           className="text-lg font-semibold tracking-tight text-white"
         >
-          Bharath<span className="text-violet-400">.</span>
+          Bharath Babu N<span className="text-violet-400">.</span>
         </a>
 
         {/* Desktop navigation */}
