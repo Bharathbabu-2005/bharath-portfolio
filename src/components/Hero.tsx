@@ -195,39 +195,30 @@ function Hero() {
           <div className="absolute -inset-4 rounded-[2rem] border border-violet-400/10" />
 
           {/* Photo Container */}
-          <div className="relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-zinc-900">
+          <div className="group relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-zinc-900 shadow-2xl shadow-violet-950/20">
 
             <img
               src={profileImage}
               alt="Bharath Babu N"
-              className="aspect-[4/5] w-full object-cover"
+              className="aspect-[4/5] w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
             />
 
             {/* Photo Gradient */}
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
 
-          </div>
+            {/* Status Badge */}
+            <div className="absolute bottom-4 left-4 flex items-center gap-2.5 rounded-full border border-white/15 bg-black/60 px-4 py-2 backdrop-blur-xl shadow-2xl transition-all duration-300 hover:border-emerald-500/40 hover:bg-black/80">
 
-          {/* Open to Opportunities */}
-          <div className="absolute -bottom-5 -left-5 flex items-center gap-3 rounded-2xl border border-white/10 bg-zinc-950/90 px-5 py-4 shadow-2xl backdrop-blur-xl">
+              {/* Status Indicator */}
+              <span className="relative flex h-2 w-2">
+                <span className="absolute -inset-0.5 inline-flex animate-ping rounded-full bg-emerald-400/50" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399]" />
+              </span>
 
-            {/* Status Indicator */}
-            <span className="relative flex h-3 w-3">
+              <span className="text-xs font-medium tracking-wide text-zinc-200">
+                Available for opportunities
+              </span>
 
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
-
-              <span className="relative inline-flex h-3 w-3 rounded-full bg-emerald-400" />
-
-            </span>
-
-            <div>
-              <p className="text-xs font-medium text-white">
-                Open to opportunities
-              </p>
-
-              <p className="mt-0.5 text-[11px] text-zinc-500">
-                AI · Software · GenAI
-              </p>
             </div>
 
           </div>
